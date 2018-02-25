@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    tools:context="com.example.tresnanata.igustipututresnanata_1202150025_modul3.LoginActivity"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/bannerLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/main_logo" />
+
+    <EditText
+        android:id="@+id/textUsername"
+        android:layout_below="@+id/bannerLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:text="EAD"
+        android:inputType="textPersonName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/textPass"
+        android:layout_below="@+id/textUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:text="MOBILE"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp"
+        />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:onClick="login"
+        android:textColor="#fff"
+        android:layout_marginTop="21dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"/>
+
+</RelativeLayout>
+
+
